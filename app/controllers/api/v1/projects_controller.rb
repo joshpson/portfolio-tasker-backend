@@ -1,6 +1,6 @@
 class Api::V1::ProjectsController < ApplicationController
 
-  before_action :find_project, only:[:update]
+  before_action :find_project, only:[:update, :show]
 
   def index
     @projects = Project.all
@@ -17,6 +17,10 @@ class Api::V1::ProjectsController < ApplicationController
     render json: @project, status: :accepted
   end
 
+  def show
+    render json: @project
+  end
+
   private
 
   def project_params
@@ -24,6 +28,6 @@ class Api::V1::ProjectsController < ApplicationController
   end
 
   def find_project
-    @project = project.find(params[:id])
+    @project = Project.find(params[:id])
   end
 end

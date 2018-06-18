@@ -1,6 +1,6 @@
 class Api::V1::TasksController < ApplicationController
 
-  before_action :find_task, only:[:update]
+  before_action :find_task, only:[:update, :show]
 
   def index
     @tasks = Task.all
@@ -17,6 +17,10 @@ class Api::V1::TasksController < ApplicationController
     render json: @task, status: :accepted
   end
 
+  def show
+    render json: @task
+  end
+
   private
 
   def task_params
@@ -24,6 +28,6 @@ class Api::V1::TasksController < ApplicationController
   end
 
   def find_task
-    @task = task.find(params[:id])
+    @task = Task.find(params[:id])
   end
 end
