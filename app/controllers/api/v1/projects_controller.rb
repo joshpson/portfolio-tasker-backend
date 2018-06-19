@@ -8,7 +8,7 @@ class Api::V1::ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.create(task_params)
+    @project = Project.create(project_params)
     render json: @project, status: :accepted
   end
 

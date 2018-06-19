@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :tasks, :users, :projects
+      post "projects/:id" => 'projects#update'
     end
   end
 
