@@ -1,6 +1,6 @@
 class Api::V1::ProjectsController < ApplicationController
 
-  before_action :find_project, only:[:update, :show]
+  before_action :find_project, only:[:update, :show, :destroy]
 
   def index
     @projects = Project.all
@@ -19,6 +19,10 @@ class Api::V1::ProjectsController < ApplicationController
 
   def show
     render json: @project
+  end
+
+  def destroy
+    @project.destroy
   end
 
   private

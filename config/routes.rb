@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       patch "tasks/:id" => 'tasks#update'
       post "tasks" => 'tasks#create'
       post "userprojects" => 'userprojects#create'
+      delete "projects/:id" => 'projects#destroy'
     end
   end
 
