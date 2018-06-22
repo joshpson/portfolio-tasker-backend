@@ -14,7 +14,11 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    render json: @user, status: :accepted
+    if @user.valid? 
+      render json: @user, status: :accepted
+    else 
+      render json: {status: 'error', message: 'username has already been taken'}
+    end
   end
 
   private
