@@ -20,14 +20,9 @@
 
 User.create([{username: 'Josh'}, {username: 'Julio'}])
 
-Project.create([{title: 'Flatiron Happy Hour'}, {title: 'Coding'}])
-
-Userproject.create([{user_id: 1, project_id: 1}, {user_id: 1, project_id: 2}, {user_id: 2, project_id: 2}])
+Project.create([{title: 'Flatiron Happy Hour', user_id: 1}])
 
 Task.create([
-  {description: 'Buy snacks', due_date: '2018-07-05', priority: 4, user_id: 1, project_id: 1},
-  {description: 'Buy booze', due_date: '2018-07-07', priority: 2, user_id: 1, project_id: 1},
-  {description: 'Invite everyone', due_date: '2018-07-05', priority: 3, user_id: 2, project_id: 1},
-  {description: 'Build the best app', due_date: '2018-09-05', priority: 2, user_id: 2, project_id: 2},
-  {description: 'Code more', due_date: '2018-08-05', priority: 1, user_id: 2, project_id: 2},
+  {description: 'Buy snacks', due_date: '2018-07-05', priority: 4, project_id: 1},
+  {description: 'Buy booze', due_date: '2018-07-07', priority: 2, project_id: 1}
 ])

@@ -1,5 +1,4 @@
 class TaskSerializer < ActiveModel::Serializer
-  attributes :id, :description, :due_date, :project_id, :user_id, :status
-  belongs_to :user
+  attributes :id, :description, :due_date, :project_id, :status
   belongs_to :project
 end

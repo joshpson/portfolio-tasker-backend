@@ -28,7 +28,7 @@ class Api::V1::ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :description, :status)
+    params.require(:project).permit(:title, :description, :status, :user_id)
   end
 
   def find_project
