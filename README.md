@@ -1,24 +1,7 @@
-# README
+Back end for a task management app built as a project at Flatiron School in Washington, DC using Ruby on Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was built in collaboration with Julio Torres https://github.com/jtorre20.
 
-Things you may want to cover:
+The front end can be found here: https://github.com/joshpson/portfolio-tasker-frontend.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To use this task management app please visit http://bit.ly/pearson-task-app.
