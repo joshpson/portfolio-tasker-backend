@@ -1,7 +1,11 @@
-Back end for a task management app built as a project at Flatiron School in Washington, DC using Ruby on Rails.
+Single page application built using Ruby on Rails, vanilla JavaScript and Material Design Lite.
 
-This project was built in collaboration with Julio Torres https://github.com/jtorre20.
+This app allows users to manage projects and corresponding tasks with drag and drop functionality.
 
-The front end can be found here: https://github.com/joshpson/portfolio-tasker-frontend.
+This was built as a project at Flatiron School in Washington D.C. with Julio Torres.
 
-To use this task management app please visit http://bit.ly/pearson-task-app.
+Demo Account: username: demo
+
+https://joshpson.github.io/portfolio-tasker-frontend/
+
+Frontend repo: https://github.com/joshpson/portfolio-tasker-frontend
